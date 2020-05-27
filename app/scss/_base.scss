@@ -1,7 +1,58 @@
+@font-face {
+  font-family: Lato-reg;
+  src: url(../fonts/Lato-Regular.woff2);
+}
+
+@font-face {
+  font-family: Lato-light;
+  src: url(../fonts/Lato-Light.woff2);
+}
+
+@font-face {
+  font-family: Lato-bold;
+  src: url(../fonts/Lato-Black.woff2);
+}
+
 $dsktp-body-width: 978px;
 
+$clr-orange: #F28B00;
+$clr-green: #AFB744;
+$clr-blue: #6a8aaa;
+$clr-purple: #8a5668;
+$clr-white: #FFFFFF;
+$clr-grey: #66665D;
+$clr-txt-grey: #878679;
+
+
+// Basic reset
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: Lato-reg, "Lucida Grande", Tahoma, Sans-Serif;
+  line-height: 1.4;
+}
+
+body, 
+a, 
+a:focus, 
+a:hover, 
+a:visited {
+  color: $clr-txt-grey;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+

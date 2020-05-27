@@ -1,0 +1,97 @@
+// Home page cards
+.home-grid__card {
+  display: grid;
+  justify-content: flex-start;
+  align-content: flex-end;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  transition: opacity ease-out 0.2s;
+}
+
+.home-grid__card:hover {
+  opacity: 0.8;
+}
+
+.home-grid__card,
+a.home-grid__card {
+  color: $clr-white;
+}
+
+.home-grid__card--center {
+  align-content: center;
+}
+
+.home-grid__card--top {
+  align-content: flex-start;
+}
+
+a.home-grid__card:before {
+  content: '';
+  position: absolute;
+  right: 1em;
+  bottom: 1em;
+  background-image: url(../images/home/circle-plus.png);
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  width: 25px;
+  height: 25px;
+}
+
+.home-grid__card:nth-child(1) {
+  background-color: $clr-orange;
+}
+
+.home-grid__card:nth-child(2) {
+  background-image: url(../images/home/color-of-year.png);
+}
+
+.home-grid__card:nth-child(3),
+.home-grid__card:nth-child(8),
+.home-grid__card:nth-child(14) {
+  background-color: $clr-blue;
+ }
+
+.home-grid__card:nth-child(4) {
+  background-image: url(../images/home/ssy_webdesign.jpg);
+}
+
+.home-grid__card:nth-child(5) {
+  background-image: url(../images/home/bupa_employeenews.jpg);
+}
+
+.home-grid__card:nth-child(6) {
+  background-image: url(../images/home/hsbc_university.jpg);
+}
+
+.home-grid__card:nth-child(7),
+.home-grid__card:nth-child(12) {
+  background-color: $clr-green;
+}
+
+.home-grid__card:nth-child(9) {
+  background-image: url(../images/home/waves_mobileapp.jpg);
+}
+
+.home-grid__card:nth-child(10) {
+  background-image: url(../images/home/aboutus.jpg);
+}
+
+.home-grid__card:nth-child(11) {
+  background-image: url(../images/home/employee_engagement.png);
+}
+
+.home-grid__card:nth-child(13) {
+  background-image: url(../images/home/agnovos_corpwebsite.jpg);
+}
+
+.home-grid__card:nth-child(15) {
+  background-color: $clr-purple;
+}
+
+.home-grid__card:nth-child(16) {
+  background-image: url(../images/home/hsbc_mentoringportal.jpg);
+}
+
+
