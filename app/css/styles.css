@@ -104,6 +104,50 @@ li {
     grid-column: span 2;
     grid-row: span 2; } }
 
+.home-cover-animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #F28B00;
+  -webkit-animation: coverAn 5s 1 forwards;
+  animation: coverAn 5s 1 forwards;
+  z-index: 5;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  text-align: center; }
+
+@-webkit-keyframes coverAn {
+  0% {
+    width: 100vw;
+    height: 100vh; }
+  50% {
+    width: 100vw;
+    height: 50vh; }
+  100% {
+    width: 0;
+    height: 50vh;
+    display: none; } }
+
+@keyframes coverAn {
+  0% {
+    width: 100vw;
+    height: 100vh; }
+  50% {
+    width: 100vw;
+    height: 50vh; }
+  100% {
+    width: 0;
+    height: 50vh;
+    display: none; } }
+
 .home-grid__card {
   display: grid;
   justify-content: flex-start;
