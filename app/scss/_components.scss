@@ -8,7 +8,7 @@
   width: 100vw;
   height: 100vh;
   background-color: $clr-orange;
-  animation: coverAn 5s 1 forwards;
+  animation: coverAn 3s 1 forwards;
   z-index: 5;
   white-space: nowrap;
   overflow: hidden;
@@ -25,6 +25,10 @@
   }
   50% {
     width: 100vw;
+    height: 100vh;
+  }
+  80% {
+    width: 100vw;
     height: 50vh;
   }
   100% {
@@ -34,6 +38,46 @@
   }
 }
 
+
+// Main Navigation
+.main-nav__item a:hover {
+  color: $clr-orange;
+}
+
+.main-nav__item {
+  position: relative;
+
+}
+
+.main-nav__item:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: $clr-orange;
+  transition: all .8s;
+}
+
+.main-nav__item:after {
+  content: '';
+  position: absolute;
+  right: 50%;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: $clr-orange;
+  transition: all .8s;
+}
+
+.main-nav__item:hover:before {
+  width: 50%;
+}
+
+.main-nav__item:hover:after {
+  width: 50%;
+}
 
 // Home page cards
 .home-grid__card {
